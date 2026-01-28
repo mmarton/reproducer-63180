@@ -9,3 +9,14 @@ Reproduction:
 5. `vendor/bin/phpunit`
 6. see tests fail
 
+
+Update: 7.3.11 fixes this, but symfony 7.4 seems still effected.
+
+Reproduction 2:
+
+1. `composer install`
+2. `vendor/bin/phpunit`
+3. see tests fail
+4. downgrade kernel `composer require symfony/http-kernel:"7.4.3"`
+5. `vendor/bin/phpunit`
+6. see tests pass
